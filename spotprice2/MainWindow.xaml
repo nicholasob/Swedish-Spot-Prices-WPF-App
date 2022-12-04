@@ -1,0 +1,21 @@
+﻿<Window x:Name="SpotPrice" x:Class="spotprice2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:spotprice2"
+        mc:Ignorable="d"
+        Title="Spot Price" Height="197" Width="460" AllowsTransparency="True" WindowStyle="None" Background="Transparent" MouseDown="Window_MouseDown">
+    <Grid>
+        <Label x:Name="spotLabel" Content="NOW" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="72" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="nextHourLabel" Content="NEXT HOUR" HorizontalAlignment="Center" Margin="0,121,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="48" FontWeight="Bold"/>
+        <Label x:Name="powerAreaLabel" Content="Power Area&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Margin="47,-2,0,0"/>
+        <Button x:Name="settingsButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" Height="32" BorderBrush="{x:Null}" ClickMode="Release" Click="settingsButton_Click" Margin="10,0,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/settings.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="Time" Content="" HorizontalAlignment="Left" Margin="327,0,0,0" VerticalAlignment="Top" Width="133" FontSize="16" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
